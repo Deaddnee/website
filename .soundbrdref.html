@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceilbleep WebUI - DE4DDNE3 made, bro</title>
+    <style>
+        .block {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .block1 {
+            background-color: #c51414;
+        }
+        .block2 {
+            background-color: #abe310;
+        }
+        .block3 {
+            background-color: #163aca;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body>
+    <div class="block block1">
+        <h2>Test Music</h2>
+        <button onclick="playMusic(test)">Start Music</button>
+        <button onclick="stopMusic()">Stop Music</button>
+    </div>
+
+    <div class="block block2">
+        <h2>Fart</h2>
+        <button onclick="playMusic(fart)">Start Music</button>
+        <button onclick="stopMusic()">Stop Music</button>
+    </div>
+
+    <div class="block block3">
+        <h2>Smoke Detector</h2>
+        <button onclick="playMusic(smoke)">Start Music</button>
+        <button onclick="stopMusic()">Stop Music</button>
+    </div>
+
+    <script>
+        function playMusic(whats) {
+            fetch('/play-music/'+${whats})
+                .then(response => response.text())
+                .then(data => console.log(data));
+        }
+
+        function stopMusic() {
+            fetch('/stop-music')
+                .then(response => response.text())
+                .then(data => console.log(data));
+        }
+    </script>
+</body>
+</html>

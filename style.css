@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+  }
+  h2 {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+  }
+  h3 {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+  }
+  h4 {
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+  }
+  body {
+    background-image: url("/img/back_baphomet.jpg");
+    background-size: contain;
+    opacity: .65;
+    background-position: center;
+    background-repeat: no-repeat;
+    .iframely-embed {
+        background-color: transparent;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 1;
+    }
+    .block {
+        padding: 17px;
+        margin: 10px;
+        width: auto;
+        border: 2.5px solid #212121;
+        border-radius: 5px;
+        background-color: black;
+    }
+    button {
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        cursor: crosshair;
+    }
+    .block1 {
+        padding: 17px;
+        margin: left;
+        width: auto;
+        border: 2.5px solid #212121;
+        border-radius: 5px;
+        background-color: black;
+    }
+    .block2 {
+        padding: 17px;
+        margin: middle
+        width: auto;
+        border: 2.5px solid #212121;
+        border-radius: 5px;
+        background-color: black;
+    }
+    .block3 {
+        padding: 17px;
+        margin: right;
+        width: 140px;
+        border: 2.5px solid #212121;
+        border-radius: 5px;
+        background-color: black;
+    }
+    .background {
+        background-image: url("/img/back_baphomet.jpg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    p {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 80px;
+      }
+}
